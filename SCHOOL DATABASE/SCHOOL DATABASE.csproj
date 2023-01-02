@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D7B26B43-6FDE-45D3-87FC-68C79BAE0767}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SCHOOL_DATABASE</RootNamespace>
+    <AssemblyName>SCHOOL DATABASE</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSHOW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSHOW.Designer.cs">
+      <DependentUpon>DataSHOW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgetUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgetUpdate.Designer.cs">
+      <DependentUpon>ForgetUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LibraryAdmin.Designer.cs">
+      <DependentUpon>LibraryAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogoCover.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogoCover.Designer.cs">
+      <DependentUpon>LogoCover.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarksUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarksUpdate.Designer.cs">
+      <DependentUpon>MarksUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarksUpdates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarksUpdates.Designer.cs">
+      <DependentUpon>MarksUpdates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrincipalMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrincipalMDI.Designer.cs">
+      <DependentUpon>PrincipalMDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="UpdtDLT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdtDLT.Designer.cs">
+      <DependentUpon>UpdtDLT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Studentsdetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Studentsdetails.Designer.cs">
+      <DependentUpon>Studentsdetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllUserLogins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllUserLogins.Designer.cs">
+      <DependentUpon>AllUserLogins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeachersMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachersMDI.Designer.cs">
+      <DependentUpon>TeachersMDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VicePrincipalMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VicePrincipalMDI.Designer.cs">
+      <DependentUpon>VicePrincipalMDI.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DataSHOW.resx">
+      <DependentUpon>DataSHOW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgetUpdate.resx">
+      <DependentUpon>ForgetUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LibraryAdmin.resx">
+      <DependentUpon>LibraryAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogoCover.resx">
+      <DependentUpon>LogoCover.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarksUpdate.resx">
+      <DependentUpon>MarksUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarksUpdates.resx">
+      <DependentUpon>MarksUpdates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrincipalMDI.resx">
+      <DependentUpon>PrincipalMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdtDLT.resx">
+      <DependentUpon>UpdtDLT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Studentsdetails.resx">
+      <DependentUpon>Studentsdetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllUserLogins.resx">
+      <DependentUpon>AllUserLogins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeachersMDI.resx">
+      <DependentUpon>TeachersMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VicePrincipalMDI.resx">
+      <DependentUpon>VicePrincipalMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic7.jpg" />
+    <None Include="Resources\TeachersPic.png" />
+    <None Include="Resources\TeachersPic1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tech.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoCover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
