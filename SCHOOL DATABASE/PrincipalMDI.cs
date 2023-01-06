@@ -13,8 +13,9 @@ namespace SCHOOL_DATABASE
     {
         private int childFormNumber = 0;
 
-        SqlConnection con = new SqlConnection("server=.;database=school;integrated security=true;");
-         string msg;
+        SqlConnection con = new SqlConnection("Server=tcp:my12server12.database.windows.net,1433;Initial Catalog=project;Persist Security Info=False;User ID=admin1;Password=2@Amit12;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+
+        string msg;
         public PrincipalMDI()
         {
             InitializeComponent();

@@ -11,9 +11,10 @@ namespace SCHOOL_DATABASE
 {
     public partial class LoginPage : Form
     {
-        
-        SqlConnection con = new SqlConnection("server=.;database=school;integrated security=true;");
-        
+
+        SqlConnection con = new SqlConnection("Server=tcp:my12server12.database.windows.net,1433;Initial Catalog=project;Persist Security Info=False;User ID=admin1;Password=2@Amit12;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+
+
         public LoginPage()
         {
             InitializeComponent();
@@ -24,10 +25,10 @@ namespace SCHOOL_DATABASE
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("select * from Logins where (Username=@un and Pswd=@pd and Typee=@ty)", con);
-                cmd.Parameters.AddWithValue("@un", textBox1.Text);
-                cmd.Parameters.AddWithValue("@pd", textBox2.Text);
-                cmd.Parameters.AddWithValue("@ty", comboBox1.Text);
+                SqlCommand cmd = new SqlCommand("select * from userregistration where (username=@username and password=@password and usertype=@usertype)", con);
+                cmd.Parameters.AddWithValue("@username", textBox1.Text);
+                cmd.Parameters.AddWithValue("@password", textBox2.Text);
+                cmd.Parameters.AddWithValue("@usertype", comboBox1.Text);
 
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
@@ -69,7 +70,7 @@ namespace SCHOOL_DATABASE
             {
                 MessageBox.Show("Error ☺" + ex.Message);
             }
-            if (textBox1.Text != "@un" || textBox2.Text != "@pd")
+            if (textBox1.Text != "@username" || textBox2.Text != "@password")
                  {
                 textBox1.Text = "";
                 textBox2.Text = "";
@@ -81,8 +82,8 @@ namespace SCHOOL_DATABASE
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("select * from Logins where Contact=@cn", con);
-                cmd.Parameters.AddWithValue("@cn", textBox3.Text);
+                SqlCommand cmd = new SqlCommand("select * from userregistration where contact=@contact", con);
+                cmd.Parameters.AddWithValue("@contact", textBox3.Text);
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {

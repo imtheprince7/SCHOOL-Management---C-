@@ -13,8 +13,9 @@ namespace SCHOOL_DATABASE
 {
     public partial class ForgetUpdate : Form
     {
-        SqlConnection con = new SqlConnection("server=.;database=school;integrated security=true;");
-       // string Name;
+        SqlConnection con = new SqlConnection("Server=tcp:my12server12.database.windows.net,1433;Initial Catalog=project;Persist Security Info=False;User ID=admin1;Password=2@Amit12;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+
+        // string Name;
         public ForgetUpdate()
         {
             InitializeComponent();
@@ -32,8 +33,8 @@ namespace SCHOOL_DATABASE
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("select * from Logins where Contact=@cn", con);
-                cmd.Parameters.AddWithValue("@cn", textBox10.Text);
+                SqlCommand cmd = new SqlCommand("select * from userregistration where contact=@contact", con);
+                cmd.Parameters.AddWithValue("@contact", textBox10.Text);
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {   groupBox1.Visible = false;
@@ -71,10 +72,11 @@ namespace SCHOOL_DATABASE
 
 
                 con.Open();
-                SqlCommand cmd = new SqlCommand("update Logins set EmailID=@eml,Contact=@cn where Username=@un", con);
-                cmd.Parameters.AddWithValue("@eml", textBox8.Text);
-                cmd.Parameters.AddWithValue("@cn", textBox9.Text);
-                cmd.Parameters.AddWithValue("@un", textBox7.Text);
+                
+                SqlCommand cmd = new SqlCommand("update userregistration set emailid=@emailid,contact=@contact where username=@username", con);
+                cmd.Parameters.AddWithValue("@emailid", textBox8.Text);
+                cmd.Parameters.AddWithValue("@contact", textBox9.Text);
+                cmd.Parameters.AddWithValue("@username", textBox7.Text);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Record Updated.. ");
                 con.Close();
@@ -120,10 +122,10 @@ namespace SCHOOL_DATABASE
 
 
                 con.Open();
-                SqlCommand cmd = new SqlCommand("update Logins set Pswd=@psd,CPswd=@cpd where Username=@un", con);
-                cmd.Parameters.AddWithValue("@psd", textBox4.Text);
-                cmd.Parameters.AddWithValue("@cpd", textBox5.Text);
-                cmd.Parameters.AddWithValue("@un", textBox3.Text);
+                SqlCommand cmd = new SqlCommand("update userregistration set password=@password,confirmpassword=@confirmpassword where username=@username", con);
+                cmd.Parameters.AddWithValue("@password", textBox4.Text);
+                cmd.Parameters.AddWithValue("@confirmpassword", textBox5.Text);
+                cmd.Parameters.AddWithValue("@username", textBox3.Text);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Record Updated.. ►‼◄");
                 con.Close();
@@ -206,6 +208,10 @@ namespace SCHOOL_DATABASE
             ff.Show();
         }
 
+        private void ForgetUpdate_Load(object sender, EventArgs e)
+        {
+
         }
+    }
     }
 

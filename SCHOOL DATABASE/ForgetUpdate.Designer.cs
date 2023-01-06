@@ -74,8 +74,10 @@
             this.groupBox1.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(652, 100);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Size = new System.Drawing.Size(978, 154);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ARE YOU IN RECORD ?";
@@ -84,9 +86,10 @@
             // 
             this.button6.BackColor = System.Drawing.Color.Transparent;
             this.button6.ForeColor = System.Drawing.Color.Red;
-            this.button6.Location = new System.Drawing.Point(538, 32);
+            this.button6.Location = new System.Drawing.Point(807, 49);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(83, 39);
+            this.button6.Size = new System.Drawing.Size(124, 60);
             this.button6.TabIndex = 3;
             this.button6.Text = "EXIT";
             this.button6.UseVisualStyleBackColor = false;
@@ -96,9 +99,10 @@
             // 
             this.button5.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.DarkGreen;
-            this.button5.Location = new System.Drawing.Point(421, 46);
+            this.button5.Location = new System.Drawing.Point(632, 71);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(79, 33);
+            this.button5.Size = new System.Drawing.Size(118, 51);
             this.button5.TabIndex = 2;
             this.button5.Text = "SEARCH";
             this.button5.UseVisualStyleBackColor = true;
@@ -107,19 +111,21 @@
             // textBox10
             // 
             this.textBox10.ForeColor = System.Drawing.Color.DarkGreen;
-            this.textBox10.Location = new System.Drawing.Point(166, 46);
+            this.textBox10.Location = new System.Drawing.Point(249, 71);
+            this.textBox10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox10.MaxLength = 10;
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(232, 33);
+            this.textBox10.Size = new System.Drawing.Size(346, 46);
             this.textBox10.TabIndex = 1;
             this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(12, 46);
+            this.label8.Location = new System.Drawing.Point(18, 71);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(142, 25);
+            this.label8.Size = new System.Drawing.Size(213, 38);
             this.label8.TabIndex = 0;
             this.label8.Text = "CONTACT NO";
             // 
@@ -150,7 +156,7 @@
             this.textBox1.Location = new System.Drawing.Point(215, 43);
             this.textBox1.MaxLength = 10;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(213, 20);
+            this.textBox1.Size = new System.Drawing.Size(213, 26);
             this.textBox1.TabIndex = 1;
             // 
             // label1
@@ -178,9 +184,10 @@
             this.panel1.Controls.Add(this.textBox4);
             this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Location = new System.Drawing.Point(0, 93);
+            this.panel1.Location = new System.Drawing.Point(0, 143);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(327, 437);
+            this.panel1.Size = new System.Drawing.Size(490, 672);
             this.panel1.TabIndex = 1;
             this.panel1.Visible = false;
             // 
@@ -189,9 +196,10 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.BackColor = System.Drawing.Color.White;
             this.linkLabel1.Font = new System.Drawing.Font("Palatino Linotype", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(26, 405);
+            this.linkLabel1.Location = new System.Drawing.Point(39, 623);
+            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(188, 21);
+            this.linkLabel1.Size = new System.Drawing.Size(281, 32);
             this.linkLabel1.TabIndex = 8;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "ANY MORE UPADTES ?";
@@ -201,9 +209,10 @@
             this.button2.BackColor = System.Drawing.Color.White;
             this.button2.Font = new System.Drawing.Font("Palatino Linotype", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.button2.Location = new System.Drawing.Point(197, 345);
+            this.button2.Location = new System.Drawing.Point(296, 531);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(89, 36);
+            this.button2.Size = new System.Drawing.Size(134, 55);
             this.button2.TabIndex = 7;
             this.button2.Text = "UPDATE";
             this.button2.UseVisualStyleBackColor = false;
@@ -214,9 +223,10 @@
             this.label4.BackColor = System.Drawing.Color.AliceBlue;
             this.label4.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label4.Location = new System.Drawing.Point(44, 228);
+            this.label4.Location = new System.Drawing.Point(66, 351);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(223, 25);
+            this.label4.Size = new System.Drawing.Size(333, 38);
             this.label4.TabIndex = 6;
             this.label4.Text = "CONFIRM PASSWORD";
             // 
@@ -226,9 +236,10 @@
             this.label3.BackColor = System.Drawing.Color.AliceBlue;
             this.label3.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label3.Location = new System.Drawing.Point(80, 136);
+            this.label3.Location = new System.Drawing.Point(120, 209);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(124, 25);
+            this.label3.Size = new System.Drawing.Size(184, 38);
             this.label3.TabIndex = 5;
             this.label3.Text = "PASSWORD";
             // 
@@ -238,45 +249,50 @@
             this.label2.BackColor = System.Drawing.Color.AliceBlue;
             this.label2.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label2.Location = new System.Drawing.Point(81, 57);
+            this.label2.Location = new System.Drawing.Point(122, 88);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 25);
+            this.label2.Size = new System.Drawing.Size(184, 38);
             this.label2.TabIndex = 4;
             this.label2.Text = "USERNAME";
             // 
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Palatino Linotype", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(48, 273);
+            this.textBox5.Location = new System.Drawing.Point(72, 420);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(218, 29);
+            this.textBox5.Size = new System.Drawing.Size(325, 40);
             this.textBox5.TabIndex = 3;
             this.textBox5.UseSystemPasswordChar = true;
             // 
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Palatino Linotype", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(48, 172);
+            this.textBox4.Location = new System.Drawing.Point(72, 265);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(195, 29);
+            this.textBox4.Size = new System.Drawing.Size(290, 40);
             this.textBox4.TabIndex = 2;
             this.textBox4.UseSystemPasswordChar = true;
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Palatino Linotype", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(48, 91);
+            this.textBox3.Location = new System.Drawing.Point(72, 140);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(195, 29);
+            this.textBox3.Size = new System.Drawing.Size(290, 40);
             this.textBox3.TabIndex = 1;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Palatino Linotype", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(30, 7);
+            this.textBox2.Location = new System.Drawing.Point(45, 11);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(242, 29);
+            this.textBox2.Size = new System.Drawing.Size(361, 40);
             this.textBox2.TabIndex = 0;
             // 
             // panel2
@@ -293,18 +309,20 @@
             this.panel2.Controls.Add(this.textBox6);
             this.panel2.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.panel2.Location = new System.Drawing.Point(324, 93);
+            this.panel2.Location = new System.Drawing.Point(486, 143);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(331, 437);
+            this.panel2.Size = new System.Drawing.Size(496, 672);
             this.panel2.TabIndex = 2;
             this.panel2.Visible = false;
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(204, 359);
+            this.button3.Location = new System.Drawing.Point(306, 552);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(108, 45);
+            this.button3.Size = new System.Drawing.Size(162, 69);
             this.button3.TabIndex = 7;
             this.button3.Text = "UPDATE";
             this.button3.UseVisualStyleBackColor = false;
@@ -312,24 +330,27 @@
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(56, 288);
+            this.textBox9.Location = new System.Drawing.Point(84, 443);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox9.MaxLength = 10;
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(193, 33);
+            this.textBox9.Size = new System.Drawing.Size(288, 46);
             this.textBox9.TabIndex = 6;
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(46, 201);
+            this.textBox8.Location = new System.Drawing.Point(69, 309);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(210, 33);
+            this.textBox8.Size = new System.Drawing.Size(313, 46);
             this.textBox8.TabIndex = 5;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(46, 114);
+            this.textBox7.Location = new System.Drawing.Point(69, 175);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(223, 33);
+            this.textBox7.Size = new System.Drawing.Size(332, 46);
             this.textBox7.TabIndex = 4;
             this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -337,9 +358,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(51, 245);
+            this.label7.Location = new System.Drawing.Point(76, 377);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(198, 25);
+            this.label7.Size = new System.Drawing.Size(297, 38);
             this.label7.TabIndex = 3;
             this.label7.Text = "CONTACT NUMBER";
             // 
@@ -347,9 +369,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.AliceBlue;
-            this.label6.Location = new System.Drawing.Point(92, 163);
+            this.label6.Location = new System.Drawing.Point(138, 251);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 25);
+            this.label6.Size = new System.Drawing.Size(143, 38);
             this.label6.TabIndex = 2;
             this.label6.Text = "Email  ID";
             // 
@@ -357,18 +380,20 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Azure;
-            this.label5.Location = new System.Drawing.Point(81, 74);
+            this.label5.Location = new System.Drawing.Point(122, 114);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(123, 25);
+            this.label5.Size = new System.Drawing.Size(184, 38);
             this.label5.TabIndex = 1;
             this.label5.Text = "USERNAME";
             // 
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("Palatino Linotype", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(30, 7);
+            this.textBox6.Location = new System.Drawing.Point(45, 11);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(267, 29);
+            this.textBox6.Size = new System.Drawing.Size(398, 40);
             this.textBox6.TabIndex = 0;
             // 
             // errorProvider1
@@ -377,18 +402,20 @@
             // 
             // ForgetUpdate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::SCHOOL_DATABASE.Properties.Resources.pic4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(656, 530);
+            this.ClientSize = new System.Drawing.Size(984, 815);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ForgetUpdate";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ForgetUpdate";
+            this.Load += new System.EventHandler(this.ForgetUpdate_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);

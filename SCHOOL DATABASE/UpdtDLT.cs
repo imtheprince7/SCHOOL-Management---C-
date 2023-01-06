@@ -11,7 +11,7 @@ namespace SCHOOL_DATABASE
 {
     public partial class UpdtDLT : Form
     {
-        SqlConnection con = new SqlConnection("server=HISMILY-PC\\SQL;database=school;integrated security=true;");
+        SqlConnection con = new SqlConnection("Server=tcp:my12server12.database.windows.net,1433;Initial Catalog=project;Persist Security Info=False;User ID=admin1;Password=2@Amit12;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
         public UpdtDLT()
         {
@@ -23,8 +23,8 @@ namespace SCHOOL_DATABASE
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("select * from Logins where Tid=@id", con);
-                cmd.Parameters.AddWithValue("@id", textBox4.Text);
+                SqlCommand cmd = new SqlCommand("select * from userregistration where teacherId=@teacherId", con);
+                cmd.Parameters.AddWithValue("@teacherId", textBox4.Text);
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
@@ -57,8 +57,8 @@ namespace SCHOOL_DATABASE
             try 
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("select * from  Students where Id=@id", con);
-                cmd.Parameters.AddWithValue("@id", textBox1.Text);
+                SqlCommand cmd = new SqlCommand("select * from  studentRegistration where studentid=@studentid", con);
+                cmd.Parameters.AddWithValue("@studentid", textBox1.Text);
                  SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {

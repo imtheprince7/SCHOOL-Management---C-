@@ -62,7 +62,7 @@
             this.mARKSToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1560, 42);
+            this.menuStrip1.Size = new System.Drawing.Size(1560, 40);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -148,7 +148,7 @@
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iSEMESTERToolStripMenuItem.ForeColor = System.Drawing.Color.Fuchsia;
             this.iSEMESTERToolStripMenuItem.Name = "iSEMESTERToolStripMenuItem";
-            this.iSEMESTERToolStripMenuItem.Size = new System.Drawing.Size(270, 38);
+            this.iSEMESTERToolStripMenuItem.Size = new System.Drawing.Size(208, 38);
             this.iSEMESTERToolStripMenuItem.Text = "I TERM";
             this.iSEMESTERToolStripMenuItem.Click += new System.EventHandler(this.iSEMESTERToolStripMenuItem_Click);
             // 
@@ -157,7 +157,7 @@
             this.iISEMESTERToolStripMenuItem.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iISEMESTERToolStripMenuItem.ForeColor = System.Drawing.Color.DarkOrchid;
             this.iISEMESTERToolStripMenuItem.Name = "iISEMESTERToolStripMenuItem";
-            this.iISEMESTERToolStripMenuItem.Size = new System.Drawing.Size(270, 38);
+            this.iISEMESTERToolStripMenuItem.Size = new System.Drawing.Size(208, 38);
             this.iISEMESTERToolStripMenuItem.Text = "II TERM";
             this.iISEMESTERToolStripMenuItem.Click += new System.EventHandler(this.iISEMESTERToolStripMenuItem_Click);
             // 
@@ -167,7 +167,7 @@
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fINALToolStripMenuItem.ForeColor = System.Drawing.Color.BlueViolet;
             this.fINALToolStripMenuItem.Name = "fINALToolStripMenuItem";
-            this.fINALToolStripMenuItem.Size = new System.Drawing.Size(262, 38);
+            this.fINALToolStripMenuItem.Size = new System.Drawing.Size(208, 38);
             this.fINALToolStripMenuItem.Text = "FINAL";
             this.fINALToolStripMenuItem.Click += new System.EventHandler(this.fINALToolStripMenuItem_Click);
             // 
@@ -183,7 +183,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(840, 1007);
+            this.dataGridView1.Size = new System.Drawing.Size(840, 1009);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.Visible = false;
             // 
@@ -193,10 +193,10 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 42);
+            this.panel1.Location = new System.Drawing.Point(0, 40);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(790, 1007);
+            this.panel1.Size = new System.Drawing.Size(790, 1009);
             this.panel1.TabIndex = 4;
             this.panel1.Visible = false;
             // 

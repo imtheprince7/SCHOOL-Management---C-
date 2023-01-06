@@ -13,9 +13,9 @@ namespace SCHOOL_DATABASE
 {
     public partial class Studentsdetails : Form
     {
-        SqlConnection con = new SqlConnection("server=HISMILY-PC\\SQL;database=school;integrated security=true;");
-      
-        
+        SqlConnection con = new SqlConnection("Server=tcp:my12server12.database.windows.net,1433;Initial Catalog=project;Persist Security Info=False;User ID=admin1;Password=2@Amit12;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+
+
         string filename,filepath,name,pic;
         public Studentsdetails()
         {
@@ -35,8 +35,8 @@ namespace SCHOOL_DATABASE
 
 
                 con.Open();
-                SqlCommand cmd = new SqlCommand("select * from Logins where Tid=@id", con);
-                cmd.Parameters.AddWithValue("@id", textBox9.Text);
+                SqlCommand cmd = new SqlCommand("select * from userregistration where teacherId=@teacherId", con);
+                cmd.Parameters.AddWithValue("@teacherId", textBox9.Text);
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
@@ -164,15 +164,15 @@ namespace SCHOOL_DATABASE
 
 
             con.Open();
-            SqlCommand cmd = new SqlCommand("insert into Students values(@id,@nm,@fn,@mn,@dob,@dor,@g,@cls,@rln,@sec,@med,@cn,@eml,@add,@pic)", con);
-            cmd.Parameters.AddWithValue("@id",textBox1.Text);     cmd.Parameters.AddWithValue("@nm",textBox2.Text);
-            cmd.Parameters.AddWithValue("@fn",textBox3.Text);     cmd.Parameters.AddWithValue("@mn",textBox4.Text);
-            cmd.Parameters.AddWithValue("@dob", dateTimePicker1.Value.ToString("yyyy-MM-dd")); cmd.Parameters.AddWithValue("@dor", dateTimePicker2.Value.ToString("yyyy-MM-dd"));
-            cmd.Parameters.AddWithValue("@g",radioButton1.Text);      cmd.Parameters.AddWithValue("@cls",comboBox1.Text);
-            cmd.Parameters.AddWithValue("@rln", textBox8.Text);       cmd.Parameters.AddWithValue("@sec",comboBox2.Text);
-             cmd.Parameters.AddWithValue("@med",comboBox3.Text);      cmd.Parameters.AddWithValue("@cn",textBox5.Text);
-             cmd.Parameters.AddWithValue("@eml",textBox6.Text);       cmd.Parameters.AddWithValue("@add",textBox7.Text);  
-             cmd.Parameters.AddWithValue("@pic",pictureBox1.ImageLocation);
+            SqlCommand cmd = new SqlCommand("insert into studentRegistration values(@studentid ,@studentName ,@fatherName,@motherName,@dob,@dot,@gender,@class,@rollNo,@section,@medium,@contact,@email,@address,@studentPicture)", con);
+            cmd.Parameters.AddWithValue("@studentid", textBox1.Text);     cmd.Parameters.AddWithValue("@studentName",textBox2.Text);
+            cmd.Parameters.AddWithValue("@fatherName", textBox3.Text);     cmd.Parameters.AddWithValue("@motherName", textBox4.Text);
+            cmd.Parameters.AddWithValue("@dob", dateTimePicker1.Value.ToString("yyyy-MM-dd")); cmd.Parameters.AddWithValue("@dot", dateTimePicker2.Value.ToString("yyyy-MM-dd"));
+            cmd.Parameters.AddWithValue("@gender",radioButton1.Text);      cmd.Parameters.AddWithValue("@class",comboBox1.Text);
+            cmd.Parameters.AddWithValue("@rollNo", textBox8.Text);       cmd.Parameters.AddWithValue("@section",comboBox2.Text);
+             cmd.Parameters.AddWithValue("@medium",comboBox3.Text);      cmd.Parameters.AddWithValue("@contact",textBox5.Text);
+             cmd.Parameters.AddWithValue("@email",textBox6.Text);       cmd.Parameters.AddWithValue("@address",textBox7.Text);  
+             cmd.Parameters.AddWithValue("@studentPicture", pictureBox1.ImageLocation);
              
                 cmd.ExecuteNonQuery();
 

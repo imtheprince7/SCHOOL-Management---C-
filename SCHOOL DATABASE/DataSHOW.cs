@@ -11,7 +11,8 @@ namespace SCHOOL_DATABASE
 {
     public partial class DataSHOW : Form
     {
-        SqlConnection con = new SqlConnection("server=HISMILY-PC\\SQL;database=school;integrated security=true;");
+        SqlConnection con = new SqlConnection("Server=tcp:my12server12.database.windows.net,1433;Initial Catalog=project;Persist Security Info=False;User ID=admin1;Password=2@Amit12;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+
         public DataSHOW()
         {
             InitializeComponent();
@@ -27,7 +28,7 @@ namespace SCHOOL_DATABASE
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("select * from Students",con);
+                SqlCommand cmd = new SqlCommand("select * from studentRegistration", con);
                 DataTable dt = new DataTable();
                 dt.Load(cmd.ExecuteReader());
                 con.Close();

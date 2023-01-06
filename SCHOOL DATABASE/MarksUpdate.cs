@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,8 @@ namespace SCHOOL_DATABASE
 {
     public partial class MarksUpdate : Form
     {
+        SqlConnection con = new SqlConnection("Server=tcp:my12server12.database.windows.net,1433;Initial Catalog=project;Persist Security Info=False;User ID=admin1;Password=2@Amit12;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+
         public MarksUpdate()
         {
             InitializeComponent();
@@ -23,42 +26,43 @@ namespace SCHOOL_DATABASE
 
         private void button1_Click(object sender, EventArgs e)
         {
+          
 
-            /* try
-             {
+            try
+            {
                  con.Open();
-                 SqlCommand cmd = new SqlCommand("select * from Logins where Tid=@id", con);
-                 cmd.Parameters.AddWithValue("@id", textBox1.Text);
+                 SqlCommand cmd = new SqlCommand("select * from userregistration where teacherId=@teacherId", con);
+                 cmd.Parameters.AddWithValue("@teacherId", textBox1.Text);
                  SqlDataReader dr = cmd.ExecuteReader();
                  if (dr.Read())
                  {*/
             groupBox1.Visible = false;
             groupBox2.Visible = true;
 
-            /* }
+            }
              con.Close();
          }
 
          catch (Exception ex)
          {
              MessageBox.Show("Error ♪♪" + ex.Message);
-         }*/
+         }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             panel1.Visible = true; 
 
-            /*try
+            try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("select * from Students where Id=@id", con);
-                cmd.Parameters.AddWithValue("@id", textBox2.Text);
+                SqlCommand cmd = new SqlCommand("select * from StudentsTable where studentId=@studentId", con);
+                cmd.Parameters.AddWithValue("@studentId", textBox2.Text);
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
                     groupBox2.Visible = false;
-                    panel1.Visible = true; panel2.Visible = true; panel2.Visible = true;
+                 //  panel1.Visible = true; panel2.Visible = true; panel2.Visible = true;
 
                 }
                 con.Close();
@@ -67,7 +71,7 @@ namespace SCHOOL_DATABASE
             catch (Exception ex)
             {
                 MessageBox.Show("Error ♪♪" + ex.Message);
-            }*/
+            }
         }
 
         private void textBox6_Leave(object sender, EventArgs e)
@@ -83,7 +87,7 @@ namespace SCHOOL_DATABASE
             {
                 textBox45.Text = (Convert.ToInt32(textBox6.Text) + Convert.ToInt32(textBox81.Text)).ToString();
              
-  if (Convert.ToInt32(textBox6.Text) > 70)
+             if (Convert.ToInt32(textBox6.Text) > 70)
                 {
                     MessageBox.Show("Please Check Number", "WARNING", MessageBoxButtons.RetryCancel, MessageBoxIcon.Warning);
                     textBox6.Text = "";
@@ -138,6 +142,11 @@ namespace SCHOOL_DATABASE
             }
             catch (Exception ex)
             { }
+
+        }
+
+        private void MarksUpdate_Load(object sender, EventArgs e)
+        {
 
         }
     }

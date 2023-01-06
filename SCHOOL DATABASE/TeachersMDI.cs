@@ -11,7 +11,8 @@ namespace SCHOOL_DATABASE
 {
     public partial class TeachersMDI : Form
     {
-        SqlConnection con = new SqlConnection("server=HISMILY-PC\\SQL;database=school;integrated security=true;");
+        SqlConnection con = new SqlConnection("Server=tcp:my12server12.database.windows.net,1433;Initial Catalog=project;Persist Security Info=False;User ID=admin1;Password=2@Amit12;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+
 
         private int childFormNumber = 0;
 
@@ -125,8 +126,8 @@ namespace SCHOOL_DATABASE
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("select * from Logins where Tid=@tid", con);
-                cmd.Parameters.AddWithValue("@tid", textBox1.Text);
+                SqlCommand cmd = new SqlCommand("select * from userregistration where teacherId=@teacherId", con);
+                cmd.Parameters.AddWithValue("@teacherId", textBox1.Text);
                 SqlDataReader dr = cmd.ExecuteReader();
 
                 if (dr.Read())
@@ -151,8 +152,8 @@ namespace SCHOOL_DATABASE
                 panel2.Visible = false;
                 dataGridView1.Visible = true;
                 con.Open();
-                SqlCommand cmd = new SqlCommand("select * from Logins where Tid=@tid", con);
-                cmd.Parameters.AddWithValue("@tid", textBox1.Text);
+                SqlCommand cmd = new SqlCommand("select * from userregistration where teacherId=@teacherId", con);
+                cmd.Parameters.AddWithValue("@teacherId", textBox1.Text);
                 SqlDataAdapter ad = new SqlDataAdapter(cmd);
                 DataTable tbl = new DataTable();
                 ad.Fill(tbl);

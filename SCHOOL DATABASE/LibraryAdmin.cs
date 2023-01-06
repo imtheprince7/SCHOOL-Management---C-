@@ -91,5 +91,10 @@ namespace SCHOOL_DATABASE
                 childForm.Close();
             }
         }
+
+        private void LibraryAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
