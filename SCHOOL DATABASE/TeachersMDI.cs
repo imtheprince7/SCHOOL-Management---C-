@@ -25,7 +25,7 @@ namespace SCHOOL_DATABASE
         {
             Form childForm = new Form();
             childForm.MdiParent = this;
-            childForm.Text = "Window " + childFormNumber++;
+            childForm.Text = "Window" + childFormNumber++;
             childForm.Show();
         }
 
@@ -92,7 +92,7 @@ namespace SCHOOL_DATABASE
 
         private void aDMISSIONToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Studentsdetails FF = new Studentsdetails();
+           Studentsdetails FF = new Studentsdetails();
            FF.MdiParent=this;
             FF.Show();
         }

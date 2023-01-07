@@ -35,11 +35,10 @@ namespace SCHOOL_DATABASE
                  cmd.Parameters.AddWithValue("@teacherId", textBox1.Text);
                  SqlDataReader dr = cmd.ExecuteReader();
                  if (dr.Read())
-                 {*/
-            groupBox1.Visible = false;
-            groupBox2.Visible = true;
-
-            }
+                 {
+                    groupBox1.Visible = false;
+                    groupBox2.Visible = true;
+                  }
              con.Close();
          }
 
@@ -112,7 +111,9 @@ namespace SCHOOL_DATABASE
                 }
             }
             catch (Exception ex)
-            { }
+            {
+                MessageBox.Show("Error ☺" + ex.Message);
+            }
         }
 
         private void textBox81_TextChanged(object sender, EventArgs e)
@@ -126,7 +127,9 @@ namespace SCHOOL_DATABASE
                 }
             }
             catch (Exception ex)
-            { }
+            {
+                MessageBox.Show("Error ☺" + ex.Message);
+            }
 
         }
 
@@ -141,7 +144,9 @@ namespace SCHOOL_DATABASE
                 }
             }
             catch (Exception ex)
-            { }
+            {
+                MessageBox.Show("Error ☺" + ex.Message);
+            }
 
         }
 

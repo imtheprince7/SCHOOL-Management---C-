@@ -13,7 +13,7 @@ namespace SCHOOL_DATABASE
     {
         SqlConnection con = new SqlConnection("Server=tcp:my12server12.database.windows.net,1433;Initial Catalog=project;Persist Security Info=False;User ID=admin1;Password=2@Amit12;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
-        int n, n1, n2,sum=0;
+       // int n, n1, n2,sum=0;
 
         public MarksUpdates()
         {
@@ -182,7 +182,9 @@ namespace SCHOOL_DATABASE
                 }
             }
             catch (Exception ex)
-            { }
+            {
+                MessageBox.Show("Error ☺" + ex.Message);
+            }
         }
         private void textBox81_TextChanged(object sender, EventArgs e)
         {

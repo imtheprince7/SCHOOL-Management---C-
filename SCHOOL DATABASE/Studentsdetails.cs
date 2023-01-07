@@ -30,12 +30,8 @@ namespace SCHOOL_DATABASE
         {
             try
             {
-
-
-
-
                 con.Open();
-                SqlCommand cmd = new SqlCommand("select * from userregistration where teacherId=@teacherId", con);
+                SqlCommand cmd = new SqlCommand("select * from userregistration where (teacherId=@teacherId)", con);
                 cmd.Parameters.AddWithValue("@teacherId", textBox9.Text);
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
@@ -47,6 +43,8 @@ namespace SCHOOL_DATABASE
                 else
                 {
                     textBox9.Text = "";
+                    MessageBox.Show("Error at data fetching");
+
                 }
                 con.Close();
             }
