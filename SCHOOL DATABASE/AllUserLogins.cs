@@ -22,9 +22,9 @@ namespace SCHOOL_DATABASE
            6. close Connection
         */
         // Step 1:
-            // Make ConnectionString String
+        // Make ConnectionString String
         // Step2:
-        SqlConnection con = new SqlConnection("Server=tcp:my12server12.database.windows.net,1433;Initial Catalog=project;Persist Security Info=False;User ID=admin1;Password=2@Amit12;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+        SqlConnection con = Connection.Connect();
 
         string filename, filepath;
         public AllUserLogins()

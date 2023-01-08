@@ -15,7 +15,7 @@ namespace SCHOOL_DATABASE
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Studentsdetails());
+            Application.Run(new LoginPage());
         }
     }
 }

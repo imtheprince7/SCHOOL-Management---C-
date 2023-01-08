@@ -13,8 +13,7 @@ namespace SCHOOL_DATABASE
 {
     public partial class Studentsdetails : Form
     {
-        SqlConnection con = new SqlConnection("Server=tcp:my12server12.database.windows.net,1433;Initial Catalog=project;Persist Security Info=False;User ID=admin1;Password=2@Amit12;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
-
+        SqlConnection con = Connection.Connect();
 
         string filename,filepath,name,pic;
         public Studentsdetails()
